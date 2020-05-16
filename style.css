@@ -1,0 +1,136 @@
+:root {
+  --black: #282828;
+  --black2: #161616;
+  --black3: #1f1f1f;
+  --red: #ff0000;
+  --white: #ffffff;
+  --gray: #6e6e6e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black2);
+  font-family: sans-serif;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-icon {
+  align-self: center;
+  margin-left: 20px;
+  display: flex;
+}
+
+.open-drawer,
+.close-drawer {
+  max-width: 20px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.yt-icon {
+  max-height: 20px;
+}
+
+.search-area {
+  display: flex;
+}
+
+.search-area input {
+  background-color: var(--black2);
+  border: 1px solid var(--black3);
+  padding: 5px;
+  width: 500px;
+  color: white;
+  outline: none;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.search-area button {
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--black3);
+  width: 60px;
+}
+
+.search-area button img {
+  width: 15px;
+}
+
+/* Drawer */
+.drawer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -250px;
+  top: 0;
+  background-color: var(--black);
+  width: 250px;
+  height: 100%;
+  transition: all 0.2s;
+}
+
+.drawer-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  height: 45px;
+  width: 100%;
+}
+
+.drawer-section {
+  margin-top: 5px;
+  border-top: 1px solid var(--gray);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-link {
+    padding: 10px;
+  display: flex;
+  margin: 5px;
+  justify-content: left;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.drawer-link img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.drawer-link:hover {
+  background-color: var(--black3);
+}
+
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Remove Search Bar on smaller screens */
+@media screen and (max-width: 750px) {
+  .search-area {
+    display: none;
+  }
+}

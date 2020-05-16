@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Drawer Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- The Navbar is in the container so I can set the opacity lower -->
+    <!-- Container -->
+    <div id="container" class="container">
+
+
+      <!-- Nav -->
+      <nav class="nav-bar">
+        <div class="nav-icon">
+          <img class="open-drawer" src="./svg/bars-solid.svg" />
+           <a href="https://youtube.com"><img class="yt-icon" src="./svg/yt_icon.png" /></a> 
+        </div>
+        <div class="search-area">
+            <input type="text" placeholder="search" name="q" id="q">
+            <button><img src="svg/search-solid.svg" alt="search"> </button>
+        </div>
+        <div class="icon-area">
+            
+        </div>
+      </nav>
+
+      
+    </div>
+
+    <!-- Drawer -->
+    <aside id="drawer" class="drawer">
+      <div class="drawer-icon">
+        <img class="close-drawer" src="./svg/bars-solid.svg" />
+        <img class="yt-icon" src="./svg/yt_icon.png" />
+      </div>
+
+      <!-- Top Section -->
+      <div class="drawer-section">
+          <a href="#" class="drawer-link">
+              <img src="svg/top-drawer/home-solid.svg" alt="home">
+              Home
+          </a>
+          <a href="#" class="drawer-link">
+            <img src="svg/top-drawer/fire-alt-solid.svg" alt="home">
+            Trending
+          </a>
+          <a href="#" class="drawer-link">
+            <img src="svg/top-drawer/subscr_icon.svg" alt="home">
+            Subscriptions
+          </a>
+      </div>
+
+      <!-- Main Section -->
+      <div class="drawer-section">
+          <a href="#" class="drawer-link">
+              <img src="svg/main-drawer/photo-video-solid.svg" alt="home">
+              Library
+          </a>
+          <a href="#" class="drawer-link">
+            <img src="svg/main-drawer/history-solid.svg" alt="home">
+            History
+          </a>
+          <a href="#" class="drawer-link">
+            <img src="svg/main-drawer/play-solid.svg" alt="home">
+            Your Videos
+          </a>
+          <a href="#" class="drawer-link">
+            <img src="svg/main-drawer/clock-solid.svg" alt="home">
+            Watch Later
+          </a>
+          <a href="#" class="drawer-link">
+            <img src="svg/main-drawer/thumbs-up-solid.svg" alt="home">
+            Liked Videos
+          </a>
+      </div>
+
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
