@@ -104,9 +104,10 @@ body {
 }
 
 .drawer-link {
-    padding: 10px;
+  padding: 10px;
   display: flex;
   margin: 5px;
+  align-items: center;
   justify-content: left;
   color: var(--white);
   text-decoration: none;
@@ -120,7 +121,6 @@ body {
 .drawer-link:hover {
   background-color: var(--black3);
 }
-
 
 /* Container */
 .container {
