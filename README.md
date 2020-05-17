@@ -10,7 +10,7 @@ Icons are from [fontawesome](https://fontawesome.com/)
 
 **Screenshot**
 
-![screenshot](https://imgur.com/a/6bYXhsu)
+![screenshot](https://i.imgur.com/yF1eq7X.png)
 
 ## What I learned
 
